@@ -1,4 +1,3 @@
-//your JS code here. If required.
 const bands = [
   'The Plot in You', 
   'The Devil Wears Prada', 
@@ -25,8 +24,8 @@ const sortedBands = bands.sort((a, b) => {
   return stripArticle(a).localeCompare(stripArticle(b));
 });
 
-// Get the UL element
-const bandList = document.getElementById('band');
+// Get the UL element with the corrected 'bands' ID
+const bandList = document.getElementById('bands');
 
 // Create the list items and append to the UL
 sortedBands.forEach(band => {
@@ -34,4 +33,3 @@ sortedBands.forEach(band => {
   li.textContent = band;
   bandList.appendChild(li);
 });
-
